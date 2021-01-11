@@ -1,0 +1,40 @@
+@import "./media";
+@import "./fonts.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    &:active,&:focus{
+        outline: none;
+    }
+}
+body{
+    font-family: "rubik", "sans-serif";
+    font-size: 10px;
+    min-width: 320px;
+    position: relative;
+    line-height: 1.5;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background: #FFFFFF;
+}
+body input, body textarea {
+    outline: none;
+  }
+li {
+    list-style: none;
+}
+  
+body input:required:valid, body textarea:required:valid {
+    border-color: green;
+  }
+.wrap{
+    width: 100%;
+    position: relative;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+

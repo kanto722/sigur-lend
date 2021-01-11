@@ -1,0 +1,21 @@
+{	
+	"mappings": [
+		{
+			"src": "/scss",
+			"dest": "/css"
+		}
+	],
+	"ignores": ["*.css","/scss/common","/scss/templates"],
+	"options": {
+		"outputStyle": "compressed",
+		"lineComments": false,
+		"debugInfo": false,
+		"sourceMap": true,
+		"unixNewlines": false,
+        "autoprefix": true,
+        "autoprefixConfig" : "> 1%, last 5 versions, Firefox ESR, Opera 12.1"
+	},
+	"customOptions": [],
+	"includePaths": [],
+	"requireLibs": []
+}

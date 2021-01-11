@@ -1,0 +1,17 @@
+@mixin h-margin() {
+    &:last-child{
+      margin-right: 0;
+    }
+    &:first-child{
+      margin-left: 0;
+    }
+  }
+  @mixin v-margin() {
+    &:last-child{
+      margin-bottom: 0;
+    }
+    &:first-child{
+      margin-top: 0;
+    }
+  }
+  

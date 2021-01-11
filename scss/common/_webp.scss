@@ -1,0 +1,9 @@
+@mixin webp($name, $type: jpg){
+  &.webp{
+    // background-image: url('../images/webp/' + $name + '.webp');
+    background-image: url('../img/' + $name + '.' + $type +'');
+  }
+  &.no-webp{
+    background-image: url('../img/' + $name + '.' + $type +'');
+  }
+}
