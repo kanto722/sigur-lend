@@ -9,18 +9,21 @@
         outline: none;
     }
 }
-// body{
-//     font-family: "rubik", "sans-serif";
-//     font-size: 10px;
-//     min-width: 320px;
-//     position: relative;
-//     line-height: 1.5;
-//     overflow-x: hidden;
-//     margin: 0;
-//     padding: 0;
-//     background: #FFFFFF;
-// }
-  
+body{
+    font-family: "rubik", "sans-serif";
+    font-size: 10px;
+    min-width: 320px;
+    position: relative;
+    line-height: 1.5;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background: #FFFFFF;
+}
+  li {
+      outline: none;
+      text-decoration: none;
+  }
 .container-wrap{
     width: 100%;
     position: relative;
