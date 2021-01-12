@@ -15,6 +15,8 @@
     <meta name="theme-color" content="#767067" />
 
     <link rel="stylesheet" href="/css/main.css">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -25,12 +27,12 @@
             <div class="promo-content">
                 <div class="promo-content-title">
                     <h1>Безопасные методы и приемы работы на высоте (3 группа)</h1>
-                    <div class="promo-content-title-like">
+                    <a href="#" class="promo-content-title-like">
                         <img src="/css/img/svg/nice.svg" alt="лайк">
                         <p>Свой учебно- тренировочный мобильный полигон</p>
-                    </div>
+                    </a>
                     <div class="promo-content-title-btn">
-                        <a href="#">Заказать</a>
+                        <a  href="#">Заказать</a>
                     </div>
                 </div>
                 <div class="promo-content-block">
@@ -61,10 +63,10 @@
                     <img src="/css/img/news1.jpg" alt="Изображение">
                     <div class="news-content-top_text">
                         <h2>О курсе</h2>
-                        <p>В соответствии со ст. 225 ТК РФ для всех поступающих на работу лиц, а также для работников, переводимых на другую работу, работодатель или уполномоченное им лицо обязаны проводить инструктаж по охране труда, организовывать обучение безопасным методам и приемам выполнения работ.Порядок установлен Приказом Минтруда России от 16.11.2020 № 782н, Постановлением Министерства труда и социального развития и Министерства образования РФ от 13.01.2003г. №1/29. Периодическое обучение работников 3 группы безопасным методами и приемам выполнения работ на высоте осуществляется не реже 1 раза в 5 года. Обучение завершается экзаменом.</p>
+                        <p>В соответствии со ст. 225 ТК РФ для всех поступающих на работу лиц, а также для работников, переводимых на другую работу, работодатель или уполномоченное им лицо обязаны проводить инструктаж по охране труда, организовывать обучение безопасным методам и приемам выполнения работ. <br>Порядок установлен Приказом Минтруда России от 16.11.2020 № 782н, Постановлением Министерства труда и социального развития и Министерства образования РФ от 13.01.2003г. №1/29. Периодическое обучение работников 3 группы безопасным методами и приемам выполнения работ на высоте осуществляется не реже 1 раза в 5 года. Обучение завершается экзаменом.</p>
                     </div>
                 </div>
-                <p>Приобретенные теоретические знания вы можете отработать на<a href="#">тренировочном мобильном полигоне</a></p>
+                <p>Приобретенные теоретические знания вы можете отработать на <a href="#">тренировочном мобильном полигоне</a></p>
             </div>
         </div>
     </section>
@@ -73,9 +75,9 @@
             <div class="tabs-content">
                 <div class="tabs-content-nav">
                     <ul>
-                        <li>Для кого курс</li>
-                        <li>Требование по проф. подготовке</li>
-                        <li>Медицинские противопоказания</li>
+                        <li onclick="openOne();" class="tabs-btn-one tabs-one-first">Для кого курс</li>
+                        <li onclick="openTwo();" class="tabs-btn-two">Требование по проф. подготовке</li>
+                        <li onclick="openThree();" class="tabs-btn-three">Медицинские противопоказания</li>
                     </ul>
                 </div>
                 <div class="tabs-content-text">
@@ -99,7 +101,7 @@
     <section class="start" style="display: none;">
         <div class="container-wrap">
             <div class="start-content">
-                <h2></h2>
+                <h2>Для прохождения обучения вам понадобится:</h2>
                 <div class="start-content-block">
                     <div class="start-content-block__elem">
                         <div class="start-content-block__elem_img">
@@ -117,7 +119,7 @@
                         <div class="start-content-block__elem_img">
                             <img src="/css/img/svg/port.svg" alt="рюкзак">
                         </div>
-                        <p>Копия трудовой книжки/справка об опыте работы <span>(при необходимости)</span></p>
+                        <p>Копия трудовой книжки/справка об опыте работы <br><span>(при необходимости)</span></p>
                     </div>
                     <div class="start-content-block__elem">
                         <div class="start-content-block__elem_img">
@@ -149,10 +151,10 @@
                     <h2>Заполните форму</h2>
                     <p>Оставьте ваши данные и мы с вами свяжемся</p>
                     <form action="#">
-                        <input type="text" placeholder="Имя">
-                        <input type="text" placeholder="Телефон">
+                        <input name="name2" type="text" placeholder="Имя">
+                        <input name="phone" class="number-mask" type="text" required placeholder="+7(_ _ _)_ _ _-_ _ _-_ _">
                         <p>Нажимая на кнопку я даю согласие на обработку <a href="#">персональных данных</a></p>
-                        <button type="submit">Отправить</button>
+                        <input name="send" type="submit" value="Отправить"  class="btn-style">
                     </form>
                 </div>
             </div>
@@ -161,5 +163,8 @@
     <footer>
 
     </footer>
+    <script src="/js/libs/jquery-3.5.1.min.js"></script>
+    <script src="/js/libs/jquery.maskedinput.min.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>

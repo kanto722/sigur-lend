@@ -1,3 +1,121 @@
 @import './variable';
 @import './common/media';
 
+.require {
+    padding-top: 80px;
+}
+.require-content {
+    background-image: url(/css/img/form-fon.jpg);
+    background-repeat: no-repeat;
+    padding: 60px 97px 60px 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.require-content-left {
+    p {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+        position: relative;
+        margin-bottom: 40px;
+    }
+    p::before {
+        content: '';
+        position: absolute;
+        background: #E46B2D;
+        width: 4px;
+        height: 21px;
+        transform: translateX(-10px);
+    }
+}
+.require-content-right {
+    h2 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 37px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 10px;
+    }
+    p {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 150%;
+        color: #FFFFFF;
+        margin-bottom: 10px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 377px;
+        margin-bottom: 24px;
+        input {
+            width: 377px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            color: #A7A7A7;
+            margin-bottom: 10px;
+            padding: 13px 0px 14px 16px;
+            background: #FFFFFF;
+            border-radius: 5px;
+            &::placeholder {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 19px;
+                color: #A7A7A7;
+            }
+        }
+        input:nth-child(2){
+            margin-bottom: 0;
+        }
+        p {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 14px;
+            color: #FFFFFF;
+            margin-top: 4px;
+            a {
+                outline: none;
+                text-decoration: none;
+                color: #FFFFFF;
+                cursor: pointer;
+            }
+        }
+    }
+    .btn-style {
+        width: 170px;
+        padding: 4px 40px;
+        background: #E46B2D;
+        cursor: pointer;
+        font-family: Oswald;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 31px;
+        color: #FFFFFF;
+        border-style:none;
+        border-radius: 1px;
+    }
+    .btn-style:hover {
+        background: #EC753B;
+    }
+    .btn-style:active {
+        background: #EC753B;
+    }
+}
