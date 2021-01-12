@@ -9,28 +9,19 @@
         outline: none;
     }
 }
-body{
-    font-family: "rubik", "sans-serif";
-    font-size: 10px;
-    min-width: 320px;
-    position: relative;
-    line-height: 1.5;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-    background: #FFFFFF;
-}
-body input, body textarea {
-    outline: none;
-  }
-li {
-    list-style: none;
-}
+// body{
+//     font-family: "rubik", "sans-serif";
+//     font-size: 10px;
+//     min-width: 320px;
+//     position: relative;
+//     line-height: 1.5;
+//     overflow-x: hidden;
+//     margin: 0;
+//     padding: 0;
+//     background: #FFFFFF;
+// }
   
-body input:required:valid, body textarea:required:valid {
-    border-color: green;
-  }
-.wrap{
+.container-wrap{
     width: 100%;
     position: relative;
     max-width: 1180px;
