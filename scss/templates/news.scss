@@ -5,20 +5,7 @@
     padding-top: 80px;
 }
 .news-content {
-    p{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 150%;
-        color: #222222;
-        a {
-            outline: none;
-            text-decoration-line: underline;
-            color:#E46B2D;;
-            cursor: pointer;
-        }
-    }
+
 }
 .news-content-top {
     display: flex;
@@ -71,22 +58,17 @@
 }
 //767px
 @include media-tablet {
-
+    .news-content-top_text h2 {
+        text-align: center;
+    }
 }
 //480px
 @include media-mobile {
-    .news-content{
-        p {
-            text-align: center;
-        }
-    }
+
     .news-content-top {
         img {
             margin-bottom: 20px;
             height: 210px;
-        }
-        &_text {
-            text-align: center;
         }
     }
 }

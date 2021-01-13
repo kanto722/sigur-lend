@@ -25,14 +25,19 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 320px;
+    width: 368px;
     margin-top: 20px;
     margin-bottom: 20px;
     background: #FFFFFF;
     padding: 11px 20px;
+    outline: none;
+    text-decoration: none;
     cursor: pointer;
     img {
         margin-right: 10px;
+    }
+    img:nth-child(3){
+        margin-right: 0;
     }
     p {
         font-family: Roboto;
@@ -41,11 +46,47 @@
         font-size: 16px;
         line-height: 19px;
         color: #222222;
+        span {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 19px;
+            text-transform: uppercase;
+            color: #222222;
+        }
+    }
+}
+.promo-content-title-like:hover{
+    img:nth-child(3){
+        transition: 0.4s;
+        transform: translateX(10px);
+    }
+}
+.promo-content-title-like:active{
+    img:nth-child(3){
+        transition: 0.4s;
+        transform: translateX(10px);
     }
 }
 
 .promo-content-title-btn {
-    
+    .btn-buy {
+        padding: 5px 47px;
+        background: none;
+        outline: none;
+        text-decoration: none;
+        font-family: Oswald;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 21px;
+        line-height: 31px;
+        color: #E46B2D;
+        cursor: pointer;
+        border: 1px solid #E46B2D;
+        margin-right: 0;
+    }
+
     a {
         padding: 5px 47px;
         background: #E46B2D;
@@ -58,12 +99,23 @@
         line-height: 31px;
         color: #FFFFFF;
         cursor: pointer;
+        margin-right: 9px;
     }
     a:hover {
         background: #EC753B;
     }
     a:active {
         background: #EC753B;
+    }
+    a:nth-child(2):hover {
+        background: none;
+        box-sizing: border-box;
+        filter: drop-shadow(0px 0px 10px rgba(236, 117, 59, 0.5));
+    }
+    a:nth-child(2):active {
+        background: none;
+        box-sizing: border-box;
+        filter: drop-shadow(0px 0px 10px rgba(236, 117, 59, 0.5));
     }
 }
 .promo-content-block {
@@ -115,6 +167,7 @@
     height: 80px;
     background: #EFEFEF;
     transform: translateX(-50px);
+    margin-bottom: 25px;
 }
 
 .promo-content-block-elem:nth-child(1) p::after{
@@ -130,6 +183,10 @@
         margin-left: 0;
         max-width: 100%;
     }
+    .promo-content-block-elem p {
+        width: 190px;
+    }
+ 
 }
 //992px
 @include media-tablet-horizontal {
@@ -146,6 +203,9 @@
         background-position: center top;
 
     }
+    .promo-content-block-elem p {
+        width: 160px;
+    }
 }
 //767px
 @include media-tablet {
@@ -154,7 +214,7 @@
 
         h1 {
             font-size: 26px;
-            width: 440px;
+            width: 430px;
             line-height: 30px;
         }
     }
@@ -174,19 +234,50 @@
 //480px
 @include media-mobile {
     .promo-content-title {
-        padding: 40px 0px 50px 10px;
+        padding: 40px 10px 30px 10px;
     }
     .promo-content-title h1 {
         font-size: 20px;
         width: 320px;
     }
     .promo-content-title-like {
-        width: 260px;
+        padding: 11px 10px;
+        width: 100%;
+        img {
+            margin-right: 5px;
+            width: 30px;
+        }
         p {
             font-size: 12px;
         }
     }
-    
+    .promo-content-title-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        a {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+        
+    }
+    .promo-content-title-like:hover{
+        img:nth-child(3){
+            transition: 0.4s;
+            transform: translateX(5px);
+        }
+    }
+    .promo-content-title-like:active{
+        img:nth-child(3){
+            transition: 0.4s;
+            transform: translateX(5px);
+        }
+    }
+    .promo-content-title-btn a {
+        margin-bottom: 10px;
+    }
     
 }
 @include media-custom(375px) {
@@ -201,6 +292,7 @@
     }
     .promo-content-block-elem {
         margin-right: 0;
+        margin-bottom: 20px;
     }
 }
 //320px

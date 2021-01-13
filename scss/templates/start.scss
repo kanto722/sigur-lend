@@ -59,3 +59,34 @@
 			}
 		}
 }
+
+
+//1200px
+@include media-laptop {
+
+}
+//992px
+@include media-tablet-horizontal {
+    .start-content-block {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .start-content h2 {
+        text-align: center;
+    }
+    .start {
+        padding-top: 40px;
+    }
+}
+//767px
+@include media-tablet {
+
+}
+//480px
+@include media-mobile {
+
+}
+//320px
+@include media-mobile-small {
+   
+}
