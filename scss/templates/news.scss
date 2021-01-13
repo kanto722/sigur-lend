@@ -26,6 +26,7 @@
     margin-bottom: 10px;
     img {
         margin-right: 60px;
+        object-fit: cover;
     }
 		&_text {
             h2 {
@@ -46,4 +47,50 @@
                 color: #444444;
             }
 		}
+}
+
+
+//1200px
+@include media-laptop {
+
+}
+//992px
+@include media-tablet-horizontal {
+    .news {
+        padding-top: 40px;
+    }
+    .news-content-top {
+        flex-direction: column;
+        img {
+            margin-right: 0;
+            object-fit: contain;
+            margin-bottom: 40px;
+        }
+
+    }
+}
+//767px
+@include media-tablet {
+
+}
+//480px
+@include media-mobile {
+    .news-content{
+        p {
+            text-align: center;
+        }
+    }
+    .news-content-top {
+        img {
+            margin-bottom: 20px;
+            height: 210px;
+        }
+        &_text {
+            text-align: center;
+        }
+    }
+}
+//320px
+@include media-mobile-small {
+   
 }
